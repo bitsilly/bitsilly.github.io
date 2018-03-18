@@ -3,14 +3,12 @@
 >在这些概念中，有的指锁的状态或类型， 有的指锁的设计，在这里整理并记录一下：
 
 ####一、公平锁/非公平锁
-
 1.公平锁是指按多个线程申请锁的顺序来获取锁。
 2.非公平锁是指多个线程获取锁的顺序并不是按照申请锁的顺序，有可能后申请的线程比先申请的线程优先获取锁。有可能，会造成优先级反转或者饥饿现象。
 比如：对于Java ReentrantLock而言，通过构造函数指定该锁是否是公平锁，默认是非公平锁。非公平锁的优点在于吞吐量比公平锁大。
 对于Synchronized而言，也是一种非公平锁。由于其并不像ReentrantLock是通过AQS(AbstractQueuedSynchronized 抽象的队列式的同步器 ReentrantLock，Semaphore，CountDownLatch，ReentrantReadWriteLock，FutureTask)的来实现线程调度，所以并没有任何办法使其变成公平锁。
 
 ####二、可重入锁
-
 可重入锁又名递归锁，是指在同一个线程在外层方法获取锁的时候，在进入内层方法会自动获取锁
 ReentrantLock、Synchronized都是可重入锁
 
