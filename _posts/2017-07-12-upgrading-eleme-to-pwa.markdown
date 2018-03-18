@@ -1,17 +1,17 @@
 ---
 layout:       post
 title:        "JAVA锁的那些事"
-subtitle:     "Upgrading Ele.me to Progressive Web App"
-date:         2017-07-12 12:00:00
+subtitle:     "有的指锁的状态或类型， 有的指锁的设计"
+date:         2018-03-17 12:00:00
 author:       "Hux"
 header-img:   "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
 header-mask:  0.3
 catalog:      true
 multilingual: true
 tags:
-    - 前端开发
-    - JavaScript
-    - PWA
+    - 后端
+    - 锁
+    - 高并发
 ---
 
 <!-- Chinese Version -->
